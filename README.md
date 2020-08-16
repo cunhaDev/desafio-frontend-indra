@@ -57,6 +57,10 @@
     </h4>
   </li>
     <li>
+    <h4> webpack! Em aberto, não tive escolha!
+    </h4>
+  </li>
+    <li>
     <h4>Um dos maiores problemas que tive no ínicio foi fazer as requisições em paralelo, para<br>
     trazer informações adicionais para o card, e se tivesse sobrado tempo, exibir as informações<br>
     completas dos pokemons recarregar o componenente. Ficando esta última em aberto
