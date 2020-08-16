@@ -1,0 +1,29 @@
+<div class="wrapper">
+
+  <div class="prev-container">
+    <i class="material-icons" (click)="prevPage()">
+      keyboard_arrow_left
+    </i>
+  </div>
+
+  <div class="container">
+    <app-pokemon-card
+    *ngFor="let result of fullResults"
+    idNumber="{{result.id}}"
+    name="{{result.name}}"
+    type1="{{result.types[0].type.name}}"
+    type2="{{result.types.length > 1 ? result.types[1].type.name: null}}"
+    spritePath="{{result.sprites.other['official-artwork'].front_default}}"
+    >
+
+    </app-pokemon-card>
+  </div>
+
+  <div class="next-container">
+    <i class="material-icons" (click)="nextPage()">
+      keyboard_arrow_right
+    </i>
+  </div>
+
+</div>
+

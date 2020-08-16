@@ -1,0 +1,84 @@
+
+  $card-watermark-path: '../../../../assets/img/card_watermark.png'
+  $grass: #49d0b0
+  $fire: #fb6d6c
+  $bug: #9bcc4f
+  $electric: #ffd86f
+  $water: #76bdfd
+
+  .pokemon-card
+    width: 240px
+    height: 280px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    box-sizing: border-box
+    padding: 25px
+    background-image: url($card-watermark-path)
+    background-size: cover
+    border-radius: 18px
+    cursor: pointer
+    transition: 0.2s
+    margin-top: 15px
+
+  .grass
+    background-color: $grass
+
+  .fire
+    background-color: $fire
+
+  .bug
+    background-color: $bug
+
+  .electric
+    background: $electric
+
+  .water
+    background-color: $water
+
+  .pokemon-card:hover
+    //transform: translateY(-10px)
+    transform: scale(1.04)
+
+  .pokemon-card img
+    width: 170px
+    height: 180px
+
+
+  .title-container
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: center
+
+    .title
+      font-size: 1.0rem
+
+  .number
+    font-size: 0.7rem
+    padding-bottom: 5px
+    padding-left: 30px
+    text-align: right
+
+.type-container
+  width: 100%
+  height: 100%
+  display: flex
+  box-sizing: border-box
+  align-items: center
+  justify-content: space-between
+  flex-direction: row
+  color: #fff
+  padding: 0px 10px 0px 10px
+
+  .type
+    width: 80px
+    height: 22px
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: rgba(255, 255, 255, 0.2)
+    border-radius: 10px
+
